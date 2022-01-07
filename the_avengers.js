@@ -143,3 +143,38 @@ for (let electricGuitar of instruments.guitar.electric) {
 instruments.vocals = ["Bruce Springsteen", "Johnny Cash"];
 console.log(instruments.vocals);
 
+
+// Other Objects - Garmonbozia 
+
+const garmonbozia = {
+    meltedFace: true,
+    wobblyArms: true,
+    mysteryMeats: [
+      'Schlimmbinooks',
+      'blangs',
+      { place: 'Akrotiri', treasures: ['Minoan temples', 'volcanoes'] },
+      { type: 'Yuck-tops', deliverables: [
+        'Nevermind',
+        { zone: 'safety-zone' },
+        { zone: false, true: true },
+        () => {
+          return () => {
+            return () => {
+              return () => {
+                return () => {
+                  return { website: 'Gossipcop.com', what: {
+                    offering: 'creamed corn', location: 'dark'
+                  }
+                  }
+                }
+              }
+            }
+          }
+        }
+       ]
+      }
+    ]
+};
+
+console.log(garmonbozia.mysteryMeats[3].deliverables[3]()()()()().what.offering);
+
