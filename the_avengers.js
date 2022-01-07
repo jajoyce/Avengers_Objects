@@ -115,3 +115,31 @@ for (let i = 0; i < mcuMovies.length; i++) {
     }
 }
 
+
+// Other Objects - Instruments 
+
+const instruments = {
+    banjo: ["1920 gibson", "deering", "washburn"],
+    guitar: {
+      acoustic: ["martin", "taylor", "santa cruz", "gibson"],
+      electric: ["fender Strat", "telecaster", "PRS", "languedoc"],
+      nylon: ["baldwin", "cordoba"]
+    },
+    mandolin: ["eastman", "weber", "collings"]
+};
+
+// 1. 
+console.log(instruments.guitar.electric[1]);
+console.log(instruments.guitar.acoustic[2]);
+console.log(instruments.banjo[2]);
+console.log(instruments.mandolin[1]);
+
+// 2. 
+for (let electricGuitar of instruments.guitar.electric) {
+    console.log(electricGuitar);
+}
+
+// 3. 
+instruments.vocals = ["Bruce Springsteen", "Johnny Cash"];
+console.log(instruments.vocals);
+
