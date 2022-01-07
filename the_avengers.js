@@ -77,3 +77,19 @@ const blackWidow = {
 console.log(blackWidow.aliases.realName);
 console.log(blackWidow.aliases.otherNotableAliases[1]);
 
+
+// Avengers Nested 
+
+const theAvengers = [
+    { name: 'Tony Stark', superheroName: 'Iron Man'},
+    { name: 'Steve Rogers', superheroName: 'Captain America' },
+    { name: 'Bruce Banner', superheroName: 'The Hulk'},
+    { name: 'Thor' },
+    { name: 'Natasha Romanoff', superheroName: 'Black Widow' },
+    { name: 'Clint Barton', superheroName: 'Hawkeye' }
+];
+
+for (let i = 0; i < theAvengers.length; i++) {
+    console.log(theAvengers[i].name);
+}
+
