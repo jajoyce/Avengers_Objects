@@ -46,3 +46,34 @@ console.log(ironMan.marvelMovieAppearances.spiderManHomecoming);
 // 5. 
 ironMan.jarvisAreYouThere();
 
+
+// Assembling Other Avengers 
+
+// createCaptain 
+
+const createCaptain = function () {
+    return {
+        aliases: {
+            superheroName: 'Captain America'
+        },
+        abilities: ['Superhuman Stamina', 'Superhuman Reflexes', 'peak human strength'],
+        sayPhrase: () => 'i can do this all day'
+    }
+};
+
+console.log(createCaptain().aliases.superheroName);
+console.log(createCaptain().abilities[2]);
+console.log(createCaptain().sayPhrase());
+
+// blackWidow 
+
+const blackWidow = {
+    aliases: {
+        realName: 'Natalia Alianovna Romanova', 
+        otherNotableAliases: ['Black Widow', 'Natalie Rushman']
+    }
+};
+
+console.log(blackWidow.aliases.realName);
+console.log(blackWidow.aliases.otherNotableAliases[1]);
+
